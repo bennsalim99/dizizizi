@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Benzeri Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Film Platformu</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleSection('home')">Ana Sayfa</a></li>
+                <li><a href="#" onclick="toggleSection('trailers')">Fragmanlar</a></li>
+                <li><a href="#" onclick="toggleSection('episodes')">Bölümler</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="section active">
+            <div class="banner">
+                <h1>En İyi Dizi ve Filmler</h1>
+                <button class="watch-button">Şimdi İzle</button>
+            </div>
+            <div class="movies">
+                <h2>Popüler Filmler</h2>
+                <div class="movie-list">
+                    <div class="movie">
+                        <img src="film1.jpg" alt="Film 1">
+                        <h3>Film 1</h3>
+                    </div>
+                    <div class="movie">
+                        <img src="film2.jpg" alt="Film 2">
+                        <h3>Film 2</h3>
+                    </div>
+                    <div class="movie">
+                        <img src="film3.jpg" alt="Film 3">
+                        <h3>Film 3</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="trailers" class="section">
+            <h2>Fragmanlar</h2>
+            <p>Fragman içerikleri buraya gelecek.</p>
+        </section>
+
+        <section id="episodes" class="section">
+            <h2>Bölümler</h2>
+            <p>
+                <a href="https://visualdesign242.my.canva.site/dagscqqvl3c" target="_blank">Bölüm 1 - Tasarım Linki</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Film Platformu. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

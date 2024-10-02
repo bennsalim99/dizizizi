@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #ffffff;
+    height: 100vh; /* Tam ekran için */
+    overflow: hidden; /* Kaydırmayı kaldırmak için */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #212121;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+.banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    height: calc(100vh - 100px); /* Header boyutunu düşür */
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner button:hover {
+    background-color: #ff1f3d;
+}
+
+.section {
+    display: none; /* Tüm bölümler başlangıçta gizlidir */
+    padding: 20px;
+}
+
+.section.active {
+    display: block; /* Sadece aktif bölüm görünür */
+}
+
+.movies h2 {
+    font-size: 24px;
+}
+
+.movie-list {
+    display: flex;
+    overflow-x: auto;
+}
+
+.movie {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.movie img {
+    width: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.movie img:hover {
+    transform: scale(1.05); /* Hover efekti */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #212121;
+}
